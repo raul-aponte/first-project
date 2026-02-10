@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Flex Direction</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container {
+            display: flex;
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-btn">←</a>
+    
+    <h1>flex-direction</h1>
+    
+    <div class="container">
+        <div class="code">flex-direction: row;</div>
+        <div class="flex-container row">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">flex-direction: row-reverse;</div>
+        <div class="flex-container row-reverse">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">flex-direction: column;</div>
+        <div class="flex-container column">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">flex-direction: column-reverse;</div>
+        <div class="flex-container column-reverse">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+</body>
+</html>

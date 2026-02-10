@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Flex Grow</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container {
+            display: flex;
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 150px;
+        }
+
+        .grow-0 .box {
+            flex-grow: 0;
+        }
+
+        .grow-1 .box {
+            flex-grow: 1;
+        }
+
+        .grow-mixed .box:nth-child(2) {
+            flex-grow: 2;
+        }
+
+        .grow-mixed .box:nth-child(1),
+        .grow-mixed .box:nth-child(3) {
+            flex-grow: 1;
+        }
+
+        .grow-single .box:nth-child(2) {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-btn">←</a>
+    
+    <h1>flex-grow</h1>
+    
+    <div class="container">
+        <div class="code">flex-grow: 0; (default)</div>
+        <div class="flex-container grow-0">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">flex-grow: 1; (all items)</div>
+        <div class="flex-container grow-1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">flex-grow: 1; (only middle item)</div>
+        <div class="flex-container grow-single">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">flex-grow: 1, 2, 1;</div>
+        <div class="flex-container grow-mixed">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+</body>
+</html>

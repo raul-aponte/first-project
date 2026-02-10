@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Justify Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container {
+            display: flex;
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 150px;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .space-evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-btn">←</a>
+    
+    <h1>justify-content</h1>
+    
+    <div class="container">
+        <div class="code">justify-content: flex-start;</div>
+        <div class="flex-container flex-start">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">justify-content: flex-end;</div>
+        <div class="flex-container flex-end">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">justify-content: center;</div>
+        <div class="flex-container center">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">justify-content: space-between;</div>
+        <div class="flex-container space-between">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">justify-content: space-around;</div>
+        <div class="flex-container space-around">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">justify-content: space-evenly;</div>
+        <div class="flex-container space-evenly">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+</body>
+</html>

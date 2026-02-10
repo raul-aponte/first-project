@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Align Items</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container {
+            display: flex;
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 250px;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .stretch .box {
+            height: auto;
+        }
+
+        .baseline .box:nth-child(1) {
+            font-size: 16px;
+        }
+
+        .baseline .box:nth-child(2) {
+            font-size: 32px;
+        }
+
+        .baseline .box:nth-child(3) {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-btn">←</a>
+    
+    <h1>align-items</h1>
+    
+    <div class="container">
+        <div class="code">align-items: flex-start;</div>
+        <div class="flex-container flex-start">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">align-items: flex-end;</div>
+        <div class="flex-container flex-end">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">align-items: center;</div>
+        <div class="flex-container center">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">align-items: stretch;</div>
+        <div class="flex-container stretch">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">align-items: baseline;</div>
+        <div class="flex-container baseline">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+</body>
+</html>

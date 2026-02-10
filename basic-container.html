@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Basic Flex Container</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container {
+            display: flex;
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+        .no-flex {
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="home-btn">←</a>
+    
+    <h1>display: flex</h1>
+    
+    <div class="container">
+        <div class="code">display: flex;</div>
+        <div class="flex-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">display: block; (default)</div>
+        <div class="no-flex">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </div>
+</body>
+</html>
